@@ -1,0 +1,14 @@
+{
+  "apps": [
+    {
+      "name": "am-telegram-bot",
+      "script": "./bin/www",
+      "env": {
+        "NODE_ENV": "prod"
+      },
+      "instances": -1,
+      "exec_mode": "cluster",
+      "watch": true
+    }
+  ]
+}

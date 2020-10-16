@@ -1,0 +1,28 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "dev": "./node_modules/.bin/nodemon ./bin/www"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/register": "^7.12.0",
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "node-cron": "^2.0.3",
+    "node-telegram-bot-api": "^0.50.0",
+    "socks5-https-client": "^1.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
