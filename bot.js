@@ -2,9 +2,9 @@
 import config from "./config";
 
 // bot命令
-import commands from "./commands";
+import commands from "./bot/commands";
 // bot事件
-import events from "./events";
+import events from "./bot/events";
 
 const {
   bot: { token, socks_host, socks_port },

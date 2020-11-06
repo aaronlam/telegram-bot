@@ -1,4 +1,4 @@
-import { commandHelper } from "../utils/helper";
+import { commandHelper } from "../../utils/helper";
 
 import startCallback from "./start";
 import aboutCallback from "./about";

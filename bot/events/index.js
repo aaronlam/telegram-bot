@@ -1,4 +1,4 @@
-import { eventHelper } from "../utils/helper";
+import { eventHelper } from "../../utils/helper";
 
 import menuCallback from "./menu";
 

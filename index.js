@@ -4,7 +4,7 @@ import config from "./config";
 // telegram bot
 import bot from "./bot";
 // telegram bot cron
-import cron from "./cron";
+import cron from "./bot/crons";
 // apis
 import apis from "./apis";
 
