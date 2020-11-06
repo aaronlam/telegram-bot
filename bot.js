@@ -1,13 +1,14 @@
 // 配置信息
 import config from "./config";
-const {
-  bot: { token, socks_host, socks_port },
-} = config;
 
 // bot命令
 import commands from "./commands";
 // bot事件
 import events from "./events";
+
+const {
+  bot: { token, socks_host, socks_port },
+} = config;
 
 // telegram bot相关依赖包
 const TelegramBot = require("node-telegram-bot-api");
@@ -28,15 +29,17 @@ const bot = new TelegramBot(token, {
 
 // 绑定command
 if (commands) {
-  commands.map((item) => {
-    bot.onText(item["expression"], item["callback"](bot));
+  commands.map((command) => {
+    const { expression, callback } = command;
+    bot.onText(expression, callback(bot));
   });
 }
 
 // 绑定evnet
 if (events) {
-  events.map((item) => {
-    bot.on(item["eventType"], item["callback"](bot));
+  events.map((event) => {
+    const { eventType, callback } = event;
+    bot.on(eventType, callback(bot));
   });
 }
 

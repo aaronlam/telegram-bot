@@ -4,7 +4,7 @@ import news from "./news";
 
 const tasks = [
   {
-    expression: "00 00 * * *",
+    expression: "*/1 * * * *",
     callback: news,
   },
 ];
